@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('capa-ebook.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.88);
+  z-index: -1;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+p, li {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: disc;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+header.hero {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.capa {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #4e9fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.btn:hover {
+  background: #1e70f0;
+}
+
+/* Blocos personalizados */
+section {
+  margin: 60px 0;
+}
+
+.benefits, .learnings, .testimonials, .author, .cta, .bonus, .mirror, .questions, .comparison, .guarantee, .cta-final {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.testimonial-box {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-left: 5px solid #4e9fff;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+.testimonial-box span {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* Comparação visual */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+.comparison-grid h3 {
+  font-size: 1.2em;
+  color: #4e9fff;
+  margin-bottom: 10px;
+}
+
+.comparison-grid ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.comparison-grid li {
+  padding: 6px 0;
+}
+
+/* Ícones e destaques */
+ul li::before {
+  content: "✅ ";
+  color: #4e9fff;
+}
+
+/* CTA Final */
+.cta-final {
+  background-color: #4e9fff;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 12px;
+}
+
+.cta-final h2 {
+  font-size: 2em;
+}
+
+.cta-final .btn {
+  background-color: #fff;
+  color: #1e70f0;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
