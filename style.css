@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px;
+    background-color: transparent; /* Cor de fundo inicial */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease; /* Transição para a animação */
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.cabecalho nav a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Quando o cabeçalho se torna "sticky", a classe é adicionada pelo JavaScript */
+.cabecalho.sticky {
+    background-color: #4682b4; /* Azul mais forte */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para destacar */
+}
+
+.cabecalho.sticky nav a {
+    color: white;
+}
+
+.conteudo-principal {
+    padding: 30px;
+    height: 200vh; /* Conteúdo longo para habilitar a rolagem */
+}
